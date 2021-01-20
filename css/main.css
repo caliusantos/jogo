@@ -1,7 +1,6 @@
-body html{
+body, html{
     margin: 0px;
-    height: 100%;
-    width: 100%;
+    border: 0px;
 }
 
 main{
@@ -12,14 +11,18 @@ main{
     justify-content: center;
     text-align: center;
     align-items: center;
-    background-color: aquamarine;
+    background-image: url(../imagens_time_europeus/taca.png);
+    /* background-color: aquamarine; */
+    font-family: 'Roboto', sans-serif;
+    color: white;
 }
 
 
 #tabuleiro{
     width: 80%;
     height: 80%;
-    background-color: white;
+    /* background-color: white; */
+    background-image: url(../imagens_time_europeus/campo_futebol.jpg);
     box-shadow: darkgray 20px 20px 20px;
     display: flex;
     flex-wrap: wrap;
@@ -32,10 +35,11 @@ height: 100px;
 display: flex;
 justify-content: space-around;
 }
+
 .card{
     width: 20%;
     height: 20%;
-    background-color: white;
+    background-color: orangered;
     padding: 20px;
     margin: 20px;
 }
@@ -44,4 +48,14 @@ section.input {
     margin: 20px;
     height: 20px;
     width: 20px;
+}
+
+#comeco {
+    display: flex;
+    justify-content: space-around;
+width: 100%;
+}
+
+#titulo {
+    color: white;
 }

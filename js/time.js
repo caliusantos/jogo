@@ -1,104 +1,127 @@
+var pontuacaoatual = 0
 
-var titulos = [
-  
-    {
-        id: 1,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card1 - Alt 1",
-        Altenativa2 : "Card1 - Alt 2",
-        Altenativa3 : "Card1 - Alt 3",
-    },
-    {
-        id: 2,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card2 - Alt 1",
-        LetraB : "Card2 - Alt 2",
-        LetraC : "Card2 - Alt 3",
-    },
-    {
-        id: 3,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card3 - Alt 1",
-        Altenativa2 : "Card3 - Alt 2",
-        Altenativa3 : "Card3 - Alt 3",
-    },
-    {
-        id: 4,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card4 - Alt 1",
-        LetraB : "Card4 - Alt 2",
-        LetraC : "Card4 - Alt 3",
-    },
-    {
-        id: 5,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card5 - Alt 1",
-        Altenativa2 : "Card5 - Alt 2",
-        Altenativa3 : "Card5 - Alt 3",
-    },
-    {
-        id: 6,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card6 - Alt 1",
-        LetraB : "Card6 - Alt 2",
-        LetraC : "Card6 - Alt 3",
-    },
-    {
-        id: 7,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card7 - Alt 1",
-        Altenativa2 : "Card7 - Alt 2",
-        Altenativa3 : "Card7 - Alt 3",
-    },
-    {
-        id: 8,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card8 - Alt 1",
-        LetraB : "Card8 - Alt 2",
-        LetraC : "Card8 - Alt 3",
-    },
-    {
-        id: 9,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card9 - Alt 1",
-        Altenativa2 : "Card9 - Alt 2",
-        Altenativa3 : "Card9 - Alt 3",
-    },
-    {
-        id: 10,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card10 - Alt 1",
-        LetraA : "Card10 - Alt 2",
-        LetraA : "Card10 - Alt 3",
-    },
-    {
-        id: 11,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        Altenativa1 : "Card11 - Alt 1",
-        Altenativa2 : "Card11 - Alt 2",
-        Altenativa3 : "Card11 - Alt 3",
-    },
-    {
-        id: 12,
-        imgSrc : "imagens_time_europeus/liverpool.png",
-        LetraA : "Card12 - Alt 1",
-        LetraB : "Card12 - Alt 2",
-        LetraC : "Card12 - Alt 3",
-    }
-]
+function enviaResposta(){
+
+    let resposta1 = document.getElementById("certa1").checked
+
+    let resposta2 = document.getElementById("certa2").checked
+
+    let resposta3 = document.getElementById("certa3").checked
+
+    let resposta4 = document.getElementById("certa4").checked
+
+    let resposta5 = document.getElementById("certa5").checked
+
+    let resposta6 = document.getElementById("certa6").checked
+
+    let resposta7 = document.getElementById("certa7").checked
+
+    let resposta8 = document.getElementById("certa8").checked
+
+    let resposta9 = document.getElementById("certa9").checked
+
+    let resposta10 = document.getElementById("certa10").checked
+
+    let resposta11 = document.getElementById("certa11").checked
+
+    let resposta12 = document.getElementById("certa12").checked
 
 
-
-function iniciaJogo(){
-    let card = document.getElementById("card-1");
-    card.innerHTML = 
-    `
-    Quantas troféus de premier league tem o Liverpool? <br>
-    <img id= "escudo" src="${titulos[0].imgSrc} " alt="Liverpool"> <br>
-    <input type="radio" name="resp-1" id="alt11"><label>${titulos[0].Alternativa1}</label> <br>
-    <input type="radio" name="resp-1" id="alt12"><label>${titulos[0].Alternativa2}</label> <br>  
-    <input type="radio" name="resp-1" id="alt13"><label>${titulos[0].Alternativa3}</label> <br>
-    `
-    
+if(resposta1 == true){
+   
+   pontuacaoatual = pontuacaoatual + 1;
+   document.getElementById("resposta1").textContent = "você acertou"
 }
-       
+else{
+    
+    document.getElementById("resposta1").textContent = "você errou"
+}
+
+if(resposta2 == true){
+    pontuacaoatual = pontuacaoatual + 1;
+    document.getElementById("resposta2").textContent = "você acertou";
+}
+ else{
+    document.getElementById("resposta2").textContent = "você errou";
+}
+
+ if(resposta3 == true){
+    pontuacaoatual = pontuacaoatual + 1;
+    document.getElementById("resposta3").textContent = "você acertou";
+}
+ else{
+    document.getElementById("resposta3").textContent = "você errou";
+}
+
+ if(resposta4 == true){
+    pontuacaoatual = pontuacaoatual + 1;
+    document.getElementById("resposta4").textContent = "você acertou";
+}
+ else{
+    document.getElementById("resposta4").textContent = "você errou";
+}
+ 
+ if(resposta5 == true){
+     pontuacaoatual = pontuacaoatual + 1;
+     document.getElementById("resposta5").textContent = "você acertou";
+}
+ else{
+     document.getElementById("resposta5").textContent = "você errou";
+}
+ 
+ if(resposta6 == true){
+    document.getElementById("resposta6").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta6").textContent = "você errou";
+}
+
+ if(resposta7 == true){
+    document.getElementById("resposta7").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta7").textContent = "você errou";
+}
+
+ if(resposta8 == true){
+    document.getElementById("resposta8").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta8").textContent = "você errou";
+}
+
+ if(resposta9 == true){
+    document.getElementById("resposta9").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta9").textContent = "você errou";
+}
+ 
+ if(resposta10 == true){
+    document.getElementById("resposta10").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta10").textContent = "você errou";
+}
+
+ if(resposta11 == true){
+    document.getElementById("resposta11").textContent = "você acertou";
+    pontuacaoatual = pontuacaoatual + 1;
+}
+ else{
+     document.getElementById("resposta11").textContent = "você errou";
+}
+
+if(resposta12 == true){
+   document.getElementById("resposta12").textContent = "você acertou";
+   pontuacaoatual = pontuacaoatual + 1;
+}
+else{
+    document.getElementById("resposta12").textContent = "você errou";
+}
+}
