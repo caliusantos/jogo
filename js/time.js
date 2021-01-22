@@ -30,7 +30,7 @@ function enviaResposta(){
 if(resposta1 == true){
    
    pontuacaoatual = pontuacaoatual + 1;
-   document.getElementById("resposta1").textContent = "você acertou"
+   document.getElementById("resposta1").textContent = "você acertou! Você ganhou 10 pontos" 
 }
 else{
     
@@ -39,7 +39,7 @@ else{
 
 if(resposta2 == true){
     pontuacaoatual = pontuacaoatual + 1;
-    document.getElementById("resposta2").textContent = "você acertou";
+    document.getElementById("resposta2").textContent = "você acertou! Você ganhou 10 pontos";
 }
  else{
     document.getElementById("resposta2").textContent = "você errou";
@@ -47,15 +47,15 @@ if(resposta2 == true){
 
  if(resposta3 == true){
     pontuacaoatual = pontuacaoatual + 1;
-    document.getElementById("resposta3").textContent = "você acertou";
+    document.getElementById("resposta3").textContent = "você acertou! Você ganhou 10 pontos";
 }
  else{
-    document.getElementById("resposta3").textContent = "você errou";
+    document.getElementById("resposta3").textContent = "você errou ";
 }
 
  if(resposta4 == true){
     pontuacaoatual = pontuacaoatual + 1;
-    document.getElementById("resposta4").textContent = "você acertou";
+    document.getElementById("resposta4").textContent = "você acertou! Você ganhou 10 pontos";
 }
  else{
     document.getElementById("resposta4").textContent = "você errou";
@@ -63,14 +63,14 @@ if(resposta2 == true){
  
  if(resposta5 == true){
      pontuacaoatual = pontuacaoatual + 1;
-     document.getElementById("resposta5").textContent = "você acertou";
+     document.getElementById("resposta5").textContent = "você acertou! Você ganhou 10 pontos";
 }
  else{
      document.getElementById("resposta5").textContent = "você errou";
 }
  
  if(resposta6 == true){
-    document.getElementById("resposta6").textContent = "você acertou";
+    document.getElementById("resposta6").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -78,7 +78,7 @@ if(resposta2 == true){
 }
 
  if(resposta7 == true){
-    document.getElementById("resposta7").textContent = "você acertou";
+    document.getElementById("resposta7").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -86,7 +86,7 @@ if(resposta2 == true){
 }
 
  if(resposta8 == true){
-    document.getElementById("resposta8").textContent = "você acertou";
+    document.getElementById("resposta8").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -94,7 +94,7 @@ if(resposta2 == true){
 }
 
  if(resposta9 == true){
-    document.getElementById("resposta9").textContent = "você acertou";
+    document.getElementById("resposta9").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -102,7 +102,7 @@ if(resposta2 == true){
 }
  
  if(resposta10 == true){
-    document.getElementById("resposta10").textContent = "você acertou";
+    document.getElementById("resposta10").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -110,7 +110,7 @@ if(resposta2 == true){
 }
 
  if(resposta11 == true){
-    document.getElementById("resposta11").textContent = "você acertou";
+    document.getElementById("resposta11").textContent = "você acertou! Você ganhou 10 pontos";
     pontuacaoatual = pontuacaoatual + 1;
 }
  else{
@@ -118,7 +118,7 @@ if(resposta2 == true){
 }
 
 if(resposta12 == true){
-   document.getElementById("resposta12").textContent = "você acertou";
+   document.getElementById("resposta12").textContent = "você acertou! Você ganhou 10 pontos";
    pontuacaoatual = pontuacaoatual + 1;
 }
 else{
